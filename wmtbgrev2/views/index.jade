@@ -1,0 +1,107 @@
+extends layout
+block content
+
+  section#bannerSection
+    h1 Derek Barnes
+
+  section#mainNav
+    p
+      b Blog
+    div#blogLinks
+      a(href='/blog') Scale/Arpeggio Charts
+      a(href='/blog') Production Concepts 
+      a(href='/blog') Great Producers 
+      a(href='/blog') DAWs 
+      a(href='/blog') Lyrical Analysis 
+
+
+
+  div#videoGridContainer    
+    iframe(src="https://www.youtube.com/embed/DrvrWtD-5FA" 
+    frameborder="0" allowfullscreen)
+    div#sideNav
+      p
+        a(href="/blog") /Blog
+      p
+        a(href="/beats") /Beats
+      p
+        a(href="/drums") /Drums
+      p
+        a(href="/bass") /Bass
+      p
+        a(href="keys") /Keys
+      p
+        a(href="synth") /Synth
+      p
+        a(href="daw") /DAW
+      p
+        a(href="theory") /Theory
+
+
+  div#listGridContainer
+    div#beginner.videoList
+      if rout == 'beats'
+        each video, i in beginner
+          a
+            p(data-index=i class="videoTitle") #{video}
+      else if rout == 'drums'
+        each video, i in beginner
+          a
+            p(data-index=i class="videoTitle") #{video}
+      else if rout == 'bass'
+        each video, i in beginner
+          a
+            p(data-index=i class="videoTitle") #{video}
+      else if rout == 'keys'
+        each video, i in beginner
+          a
+            p(data-index=i class="videoTitle") #{video}
+      else if rout == 'synth'
+        each video, i in beginner
+          a
+            p(data-index=i class="videoTitle") #{video}
+      else if rout == 'daw'
+        each video, i in beginner
+          a
+            p(data-index=i class="videoTitle") #{video}
+      else if rout == 'theory'
+        each video, i in beginner
+          a
+            p(data-index=i class="videoTitle") #{video}
+
+    div#advanced.videoList
+      if rout == 'beats'
+        each video, i in advanced
+          a
+            p(data-index=i class="videoTitle") #{video}
+      else if rout == 'drums'
+        each video, i in advanced
+          a
+            p(data-index=i class="videoTitle") #{video}
+      else if rout == 'bass'
+        each video, i in advanced
+          a
+            p(data-index=i class="videoTitle") #{video}
+      else if rout == 'keys'
+        each video, i in advanced
+          a
+            p(data-index=i class="videoTitle") #{video}
+      else if rout == 'synth'
+        each video, i in advanced
+          a
+            p(data-index=i class="videoTitle") #{video}
+      else if rout == 'daw'
+        each video, i in advanced
+          a
+            p(data-index=i class="videoTitle") #{video}
+      else if rout == 'theory'
+        each video, i in advanced
+          a
+            p(data-index=i class="videoTitle") #{video}
+
+
+  footer
+      p this is the footer
+      block foot
+
+  script(src='/javascripts/main.js' type="module")

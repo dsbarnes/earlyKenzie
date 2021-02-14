@@ -1,0 +1,26 @@
+#posts{
+    width: 1000px;
+    height: 225px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+.post{
+    width: 20px;
+    height: 150px;
+    border: 1px solid blue;
+    margin-left: 6em;
+    margin-right: 6em;
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.disk{
+    border: 3px solid red;
+    height: 20px;
+    /* float: left; */
+}
+#disk1 {width: 5em;}
+#disk2 {width: 4em;}
+#disk3 {width: 3em;}
+#disk4 {width: 2em;}

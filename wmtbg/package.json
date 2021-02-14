@@ -1,0 +1,48 @@
+{
+  "name": "wmtgb-beta-1",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.1.2",
+    "semantic-ui": "^2.4.2",
+    "semantic-ui-react": "^0.88.1"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      "> 1%",
+      "ie >= 8",
+      "edge >= 15",
+      "ie_mob >= 10",
+      "ff >= 45",
+      "chrome >= 45",
+      "safari >= 7",
+      "opera >= 23",
+      "ios >= 7",
+      "android >= 4",
+      "bb >= 10",
+      "maintained node versions",
+      "not dead"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@craco/craco": "^5.5.0",
+    "@semantic-ui-react/craco-less": "^1.1.0",
+    "semantic-ui-less": "^2.4.1"
+  }
+}

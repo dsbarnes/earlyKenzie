@@ -1,0 +1,20 @@
+#con{
+    display: flex;
+}
+.cell{
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+}
+[data-type=" "]{
+    background-color: red;
+}
+[data-type="W"]{
+    background-color: blue;
+}
+[data-type="S"]{
+    background-color: yellow;
+}
+[data-type="F"]{
+    background-color: green;
+}

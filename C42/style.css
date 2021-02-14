@@ -1,0 +1,15 @@
+#main{
+    display: flex;
+}
+.cell{
+    border: 2px solid blue;
+    height: 50px;
+    width: 50px;
+    background: white;
+}
+.player1{
+    background: red;
+}
+.player2{
+    background: black;
+}

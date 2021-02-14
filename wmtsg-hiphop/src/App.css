@@ -1,0 +1,25 @@
+
+.siteCard{
+    /* text-align: center; */
+    background-color: silver;
+    min-height: 33vh;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: calc(10px + 1vmin);
+    color: white;
+}
+#redBox{
+    width: 95%;
+    height: 28vh;
+    border: 1px solid grey;
+    margin: 0 auto;
+}
+
+iframe{
+    height: 300px;
+    width: 100%;
+}
+
+li.MuiGridList-root{
+    height: 999px;
+}

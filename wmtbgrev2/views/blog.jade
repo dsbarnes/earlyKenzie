@@ -1,0 +1,65 @@
+extends layout
+block content
+
+    section#bannerSection
+        h1 Derek Barnes
+
+
+    section#mainNavBlog
+        p
+            b Videos
+        div#blogLinks
+            a(href='/beats') /Beats
+            a(href='/drums') /Drums
+            a(href='/bass') /Bass
+            a(href='/keys') /Keys
+            a(href='/synth') /Synth
+            a(href='/daw') /DAW
+            a(href='/theory') /Theory
+
+
+    div#blogGridContainer
+        div#blogPost
+            each value, key in blog
+                if key.startsWith('title')
+                    h1#blogTitle= value
+                else if key.startsWith('section')
+                    h2#blogSection= value
+                else if key.startsWith('sub')
+                    h3#blogSubSection= value
+                else if key.startsWith('text')
+                    p#blogText= value
+
+
+        div#sideNav
+            p
+                a(href="/") /Videos
+            p
+                a(href="/blog/charts") /scales & arpeggio charts
+            p
+                a(href="/blog/production") /Production Concepts
+            p
+                a(href="/blog/producers") /Great Producers
+            p
+                a(href="/blog/lyrics") /Lyrical Analysis
+            p
+                a(href="/blog/daw") /DAWs
+
+
+    div#listGridContainerBlog
+        if rout == 'charts'
+            p charts
+        if rout == 'production'
+            p production
+        if rout == 'producers'
+            p producers
+        if rout == 'lyrics'
+            p lyrics
+        if rout == 'daw'
+            p daw
+
+
+    footer
+        p this is the footer
+
+    script(src='/javascripts/main.js' type="module")

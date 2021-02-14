@@ -1,0 +1,16 @@
+body{
+    /* display: flex; */
+}
+button{
+    height:25px;
+    margin-left: 10px;
+    margin-right: 25px;
+}
+canvas{
+    border: 1px solid navy;
+}
+.slider{
+    -webkit-appearance: slider-vertical;
+    /* height: 300px; */
+    width: 30px;
+}

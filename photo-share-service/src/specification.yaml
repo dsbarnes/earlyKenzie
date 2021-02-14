@@ -1,0 +1,13 @@
+openapi: 3.0.1
+info:
+  title: Photo Sharing Service
+  version: "1.0.0"
+servers:
+  - url: http://localhost:3000/api
+    description: localhost
+  - url: https://{domain}/api
+    description: Production Server
+    variables:
+      domain:
+        default: localhost:3000
+        description: Domain

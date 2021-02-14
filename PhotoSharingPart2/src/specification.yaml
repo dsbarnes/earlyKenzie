@@ -1,0 +1,66 @@
+openapi: 3.0.1
+info:
+  title: Photo Sharing Service
+  version: "1.0.0"
+servers:
+  - url: http://localhost:3000/
+    description: localhost
+  # - url: https://{domain}/api
+  #   description: Production Server
+  #   variables:
+  #     domain:
+  #       default: localhost:3000
+  #       description: Domain
+paths:
+  /api/images:
+    get:
+      tags:
+        - "api"
+      summary: "request a users image"
+      responses:
+        200:
+          description: 'OK'
+          content: 
+            application/json:
+              schema:
+                type: object
+                properties:
+                  imageURIs:
+                    type: string
+                  statusCode:
+                    type: integer
+        400:
+          description: "Ya broke it."
+    
+    post:
+      tags:
+      - "api"
+      summary: "upload an image"
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                picture:
+                  type: string
+                  format: binary
+              required:
+                - picture
+        description: ""
+        required: true
+        
+      responses:
+        200:
+          description: "OK!"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  imageURI:
+                    type: string
+                  statusCode:
+                    type: integer
+        400:
+          description: "That did not work"

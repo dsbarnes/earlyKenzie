@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio src="Salt Lamp.wav" type="audio/mpeg"></audio>
+
+    <button data-playing="false">
+        <span>Play/Pause</span>
+    </button>
+
+    Volume: 
+    <input
+        name=""
+        id="volume"
+        class="slider"
+        type="range"
+        id="volume"
+        min="0"
+        max="5"
+        value="1"
+        step="0.01">
+    <!-- Pan: 
+    <input 
+        type="range"
+        class="slider"
+        id="panner"
+        min="-1"
+        max="1"
+        value="0"
+        step="0.01"> -->
+
+    <canvas 
+        height="220px"
+        width="1000px"
+        id="oscilloscope">
+    </canvas>
+
+    <div id="equalizer">
+        lowShelf:
+        <input 
+            name="lowShelf" 
+            id="lowShelf"
+            class="band" 
+            type="range" 
+            min="-40" 
+            max="40" 
+            value="0"
+            step="1">
+
+        lowFreq:
+        <input 
+            name="lowBand" 
+            id="lowFreq"
+            class="band" 
+            type="range" 
+            min="-40" 
+            max="40" 
+            value="0"
+            step="1">
+
+        midFreq:
+        <input 
+            name="midBand" 
+            id="midFreq"
+            class="band" 
+            type="range" 
+            min="-40" 
+            max="40" 
+            value="0"
+            step="1">
+
+        highFreq:
+        <input 
+            name="highBand" 
+            id="highFreq"
+            class="band" 
+            type="range" 
+            min="-40" 
+            max="40" 
+            value="0"
+            step="1">
+
+        highShelf:
+        <input 
+            name="highShelf" 
+            id="highShelf"
+            class="band" 
+            type="range" 
+            min="-40" 
+            max="40" 
+            value="0"
+            step="1">
+    </div>
+
+    <script src="timeDomainScope.js"></script>
+</body>
+</html>

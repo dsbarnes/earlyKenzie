@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: whitesmoke;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+img{
+  width: 25px;
+  height: 25px;
+  margin: auto;
+}
+
+h1.ui.blue.center.aligned.header {
+  top: 5px;
+  left: 10px;
+}
+
+div.ui.stacked.segment {
+  left: -500px;
+}
+
+#searchBar{
+  padding: 35px;
+  width: 22%;
+  margin: auto;
+  position: relative;
+  left: 580px;
+  top: -5px;
+}
+#mainSidebar{
+  border: 1px solid lightgrey;
+  padding: 5px;
+  margin: 5px;
+  width: 20%;
+  text-align: center;
+  position: relative;
+  top: 190px;
+  
+}
+#trendingSidebar{
+  padding: 5px;
+  margin: 5px;
+  width: 24%;
+  float: right;
+  position: relative;
+  top: -160px;
+  text-align: center;
+}
+
+#kweetComponent{
+  padding: 5px;
+  margin: 5px;
+  width: 24%; 
+  position: relative;
+  left: 555px;
+  top: -210px;
+  text-align: center;
+}
+#kweetBorder{
+  border: 1px solid lightgray;
+  padding: 10px;
+  margin: auto;
+  position: relative;
+  top: -210px;
+  width: 50%;
+  left: 25px;
+}
+
+#profileHeader {
+  color: blue;
+}
+
+#kweetContainer {
+  border: 1px solid lightgray;
+  padding: 5px;
+  margin: 5px;
+  width: 53%;
+  position: relative;
+  left: 325px;
+  top: 95px;
+}
+
+#kweetBorder Button {
+  height: 40px;
+}
+
+#kweetBorder h5{
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.meta {
+  float: right;
+  font-size: 35px !important;
+}
+
+.like {
+  top: 7px !important;
+}
+.content p {
+  font-size: 20px;
+  margin-left: 30px;
+  word-break: break-word;
+}
+.label {
+  background-color:lightgrey;
+  height: 25px;
+}
+
+i.massive.icon {
+  position: relative;
+  top: 100px;
+  left: 105px;
+}
+
+h1 {
+  font-size: 75px;
+  color: rgb(35, 132, 211);
+  text-align: center;
+  position: relative;
+  top: 200px;
+  left: 20px;
+}
+
+#kweetContainer h5 {
+  position: relative;
+  top: -10px;
+}
+
+#kweetContainer label {
+  position: relative;
+  left: 10px;
+}
+
+#kweetContainer p{
+  margin-left: 30px;
+}
+
+#kweetContainer button.ui.button {
+  float: right;
+}
+
+#kweetContainer button.ui.red.button {
+  position: relative;
+  left: -495px;
+  top: -13px;
+}
+
+#kweetContainer button.ui.medium.button {
+  position: relative;
+  top: -12px;
+  left: 7px;
+}
+
+#root button.ui.black.button {
+  position: relative;
+  top: 625px;
+  left: 650px;
+}
+
+#root button.ui.blue.icon.right.floated.button {
+  position: relative;
+  left: -145px;
+}
+
+h1#profileHeader {
+  position: relative;
+  top: 75px;
+}
+
+form {
+  position: relative;
+  left: 500px;
+  top: 25px;
+}
+
+button.ui.twitter.button {
+  position: relative;
+  left: 340px;
+}

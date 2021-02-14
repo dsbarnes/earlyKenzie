@@ -1,0 +1,55 @@
+#outsideContainer{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 600px;
+    min-width: 600px;
+    margin: 50px;
+}
+.card-title{
+    margin-bottom: 42px;
+}
+img.rounded-circle{
+    position: relative;
+    top: -11.11rem;
+    left: 63%;
+    width: 145px;
+}
+.bio{
+    position: relative;
+    top: -5rem;
+}
+.callToAction{
+    position: relative;
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 1.25rem;
+    top: 24px;
+}
+#sliderSection > p {
+    margin-top: 42px;
+    margin-left: 1rem;
+}
+
+
+/* Style For The Dogs */
+#dogContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#dogImg{
+    max-width: 50%;
+    margin: auto;
+}
+
+/* Style For Both */
+.buttonGroup{
+    text-align: center;
+}
+button{
+    width: 33%;
+    margin: 8%;
+}

@@ -1,0 +1,21 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #1b1d1e;
+}
+#videoPlaylistContainer{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  width: 94vw;
+  margin: auto;
+}
+
+#acrd{ width: 21vw;}
+
+#vid{ width: 72.845vw; }
+iframe{
+  width: 100%;
+  height: 70vh;
+}

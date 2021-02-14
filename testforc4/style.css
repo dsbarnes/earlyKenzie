@@ -1,0 +1,8 @@
+#container{
+    display: flex
+}
+.cell{
+    border: 1px solid navy;
+    height: 40px;
+    width: 40px;
+}

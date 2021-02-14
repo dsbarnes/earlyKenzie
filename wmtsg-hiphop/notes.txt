@@ -1,0 +1,58 @@
+<!-- EVERYTHING in react is going here EVERYTHING!!! -->
+<div id="root"></div>
+
+
+//Which is why index.js looks like this
+//...and nothing more NOTHING
+
+import React from 'react'
+import ReactDOM from 'react-dom'
+import MyApp from './App'
+
+ReactDOM.render(<MyApp /> ,
+//App is what gets called, so we look to App.js next
+    document.getElementById('root'))
+//As we saw today, we may import thing that need to wrap the entire App
+//But only things that we want FOR EVERYTHING
+
+import React from 'react'
+import TheHead from './components/TheHead'
+import TheNav from './components/TheNav'
+import TheList from './components/TheList'
+import bandData from './data'
+import moreBandData from './moreData'
+
+class MyApp extends React.Component{
+    render(){
+        let setOne = bandData.map(act => <TheList act={act}/>)
+        let setTwo = moreBandData.map(act => <TheList act={act}/>)
+
+        return(
+            //App.js is a TABLE OF CONTENTS
+            <> //React Fragment
+            <TheHead /> //If I want to know what this does -- TheHead.js
+            <TheNav />  //If I want to know what this does -- TheNav.js
+            {setOne}
+            {setTwo}
+            </>
+        )
+    }
+}
+
+export default MyApp
+
+//TheHead.js
+import React from 'react'
+
+class TheHead extends React.Component{
+    
+    render(){
+        return(
+            //
+            <h1>Welcom to {this.props.siteName}</h1>
+        )
+    }
+}
+
+export default TheHead
+

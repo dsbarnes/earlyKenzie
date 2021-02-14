@@ -1,0 +1,33 @@
+:root{
+  --color-dark: #3c4549;
+  --color-search: #dddddd;
+}
+hr{
+  background-color: var(--color-dark);
+  opacity: 5%;
+}
+.jumbotron h1{
+  color: white;
+}
+.jumbotron p{
+  color: white;
+}
+.jumbotron{
+  background-color: var(--color-dark);
+}
+.nav-bar{
+  color: var(--color-search);
+}
+
+.card-header{
+  background-color: var(--color-dark);
+}
+.card-title{
+  color: white;
+}
+
+.form-control{
+  background-color: var(--color-search);
+  border-color: var(--color-dark);
+}
+

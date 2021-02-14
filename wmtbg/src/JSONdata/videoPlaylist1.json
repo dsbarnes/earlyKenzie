@@ -1,0 +1,37 @@
+[
+    {
+        "id" : 1,
+        "title": "Kanye",
+        "url" : ""
+    },
+    {
+        "id" : 2,
+        "title": "Common",
+        "url" : ""
+    },
+    {
+        "id" : 3,
+        "title": "Royce 5'9",
+        "url" : ""
+    },
+    {
+        "id" : 4,
+        "title": "Em",
+        "url" : ""
+    },
+    {
+        "id" : 5,
+        "title": "Bone Thugs",
+        "url" : ""
+    },
+    {
+        "id" : 6,
+        "title": "Tech N9ne",
+        "url" : ""
+    },
+    {
+        "id" : 7,
+        "title": "Lupe",
+        "url" : ""
+    }
+]
